@@ -108,7 +108,7 @@ def test_model(model, loader, device):
     return acc, all_true, all_pred
 
 if __name__ == "__main__":
-    DATA_DIR = "/kaggle/input/celebrity-faces-dataset/Celebrity Faces Dataset" 
+    DATA_DIR = "celebrity-faces-dataset/Celebrity Faces Dataset" 
     EPOCHS = 10          
     BATCH_SIZE = 32
     LR = 1e-4            
