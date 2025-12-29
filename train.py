@@ -185,3 +185,19 @@ if __name__ == "__main__":
 
         avg_acc = np.mean(fold_accs)
         print(f"FINAL RESULT (LOOCV Average): {avg_acc:.4f}")        
+
+
+
+
+
+cm = confusion_matrix(global_true, global_pred)
+plt.figure(figsize=(10, 8))
+sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', 
+            xticklabels=class_names, yticklabels=class_names)
+plt.xlabel('Predicted')
+plt.ylabel('True')
+plt.title(f'Confusion Matrix (Avg Acc: {avg_acc:.2f})')
+plt.tight_layout()
+plt.savefig("results/confusion_matrix.png")
+plt.show()
+plt.close()
