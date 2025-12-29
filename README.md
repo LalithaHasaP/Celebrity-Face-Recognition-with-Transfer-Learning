@@ -31,7 +31,8 @@ The model is trained and evaluated using **10-fold cross validation** to provide
 ---
 
 ## Dataset  
-- Publicly available face dataset organized by identity folders  
+- Publicly available face dataset organized by identity folders
+- Kaggle Link to the Dataset: https://www.kaggle.com/datasets/vishesh1412/celebrity-face-image-dataset
 - Each identity represented by multiple face images  
 - Dataset is **not included** in this repository  
 
