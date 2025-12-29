@@ -27,7 +27,7 @@ def make_stratified_folds(root_dir, k=10):
         
         #get all valid images for this actor
         img_files = glob.glob(os.path.join(folder, "*"))
-        valid_exts = {'.jpg', '.jpeg', '.png''}
+        valid_exts = {'.jpg', '.jpeg', '.png'}
         img_files = [f for f in img_files if os.path.splitext(f)[1].lower() in valid_exts]
 
         #check to make sure 100 images exist
