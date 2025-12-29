@@ -57,10 +57,8 @@ During training, each fold is trained independently, and accuracy is evaluated o
 
 ## Results  
 - Fold-level accuracy reported for each cross-validation split  
-- Final result reported as **average cross-validation accuracy**  
+- **Average cross-validation accuracy = 0.8947** 
 - Confusion matrix generated across all folds  
-
-Exact metrics and outputs are saved in the `results/` directory.
 
 ---
 
