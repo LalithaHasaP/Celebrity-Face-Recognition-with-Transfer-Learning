@@ -178,7 +178,7 @@ if __name__ == "__main__":
             df = pd.DataFrame({"fold": list(range(1, 11)), "accuracy": fold_accs})
 
             df.loc["mean"] = ["mean", df["accuracy"].mean()]
-            df.to_csv("results/fold_metrics.csv", index=False)
+            df.to_csv("fold_metrics.csv", index=False)
 
             global_true.extend(f_true)
             global_pred.extend(f_pred)
@@ -198,6 +198,6 @@ plt.xlabel('Predicted')
 plt.ylabel('True')
 plt.title(f'Confusion Matrix (Avg Acc: {avg_acc:.2f})')
 plt.tight_layout()
-plt.savefig("results/confusion_matrix.png")
+plt.savefig("confusion_matrix.png")
 plt.show()
 plt.close()
