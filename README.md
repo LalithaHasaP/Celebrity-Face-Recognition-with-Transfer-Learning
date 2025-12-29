@@ -62,14 +62,6 @@ During training, each fold is trained independently, and accuracy is evaluated o
 
 ---
 
-## How to Run  
-
-1. Install dependencies  
-pip install -r requirements.txt
-
-2. Run 10-fold cross validation 
-
----
 
 Course Context  
 This project was completed as part of **CSE 402: Biometrics and Pattern Recognition** at **Michigan State University**.  
